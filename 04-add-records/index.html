@@ -1,0 +1,1810 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="デジタル家計簿（BudgetBook）のユーザーマニュアル">
+      
+      
+      
+        <link rel="canonical" href="https://nicolas-bourbaki-math.github.io/budged-book/04-add-records/">
+      
+      
+        <link rel="prev" href="../03-basic-operations/">
+      
+      
+        <link rel="next" href="../05-edit-delete/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>支出・収入の登録方法 - デジタル家計簿 ユーザーマニュアル</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="デジタル家計簿 ユーザーマニュアル" class="md-header__button md-logo" aria-label="デジタル家計簿 ユーザーマニュアル" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            デジタル家計簿 ユーザーマニュアル
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              支出・収入の登録方法
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="デジタル家計簿 ユーザーマニュアル" class="md-nav__button md-logo" aria-label="デジタル家計簿 ユーザーマニュアル" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    デジタル家計簿 ユーザーマニュアル
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    はじめに
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-screen-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    画面構成
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-basic-operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本操作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支出・収入の登録方法
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支出・収入の登録方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支出・収入の登録方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="支出・収入の登録方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法1: 手動で追加
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法1: 手動で追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手順詳細
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ai-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法2: AI JSONで追加
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法2: AI JSONで追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatGPTプロンプト例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリマッチング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI JSON利用のベストプラクティス
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI JSON利用のベストプラクティス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        登録モードの使い分け
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトテンプレートの活用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日付・金額が不明な場合の対処
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数明細の活用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        紙の家計簿や複数日の記録の扱い
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エラー時の対処
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法3: レシートで追加 (iOS専用)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法3: レシートで追加 (iOS専用)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手順詳細
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIによる読み取り精度の向上
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応レシート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        撮影のコツ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レシートスキャン利用のベストプラクティス
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="レシートスキャン利用のベストプラクティス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日付・金額が読み取れない場合の対処
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        明細（LineItem）の自動抽出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        読み取り精度を上げるコツ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR結果の確認と修正
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apple Intelligence 追加補正（お気に入りプロンプト）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保存されるデータ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある問題と対処法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-edit-delete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支出・収入の編集と削除
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分析機能の使い方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定機能の使い方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    よくある質問
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    トラブルシューティング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-operation-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    操作フローまとめ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    サポート情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-privacy-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プライバシーポリシー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-release-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    リリースノート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支出・収入の登録方法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="支出・収入の登録方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法1: 手動で追加
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法1: 手動で追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手順詳細
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ai-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法2: AI JSONで追加
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法2: AI JSONで追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ChatGPTプロンプト例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリマッチング
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI JSON利用のベストプラクティス
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI JSON利用のベストプラクティス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        登録モードの使い分け
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトテンプレートの活用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日付・金額が不明な場合の対処
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        複数明細の活用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        紙の家計簿や複数日の記録の扱い
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エラー時の対処
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        方法3: レシートで追加 (iOS専用)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="方法3: レシートで追加 (iOS専用)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手順詳細
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIによる読み取り精度の向上
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応レシート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        撮影のコツ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レシートスキャン利用のベストプラクティス
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="レシートスキャン利用のベストプラクティス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        日付・金額が読み取れない場合の対処
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineitem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        明細（LineItem）の自動抽出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        読み取り精度を上げるコツ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR結果の確認と修正
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apple-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apple Intelligence 追加補正（お気に入りプロンプト）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        保存されるデータ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある問題と対処法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>支出・収入の登録方法</h1>
+
+<h2 id="_1">支出・収入の登録方法<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="1">方法1: 手動で追加<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>手動入力フォームでは、金額・カテゴリ・日付・店名・支払方法・メモなどを入力して記録します。</p>
+<p><img alt="支出登録フォーム" src="../assets/expense-form.png" /></p>
+<h4 id="_2">手順詳細<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<p><strong>1. ➕ボタンをタップ</strong></p>
+<pre><code>ホーム画面右上の「+」ボタン → 「手動で追加」を選択
+</code></pre>
+<p><strong>1.5 履歴から入力を活用</strong> 【便利機能】</p>
+<pre><code>新規作成画面の最上部に「履歴から入力」ボタンが表示されます
+タップすると過去の支出データから選択できます
+
+【履歴選択画面の機能】
+• 日付でグループ化された支出一覧
+• カテゴリでフィルタ
+• タグでフィルタ
+• 店名・説明で検索
+
+【コピーされる項目】
+• 金額
+• カテゴリ
+• 店舗名
+• 支払方法
+• メモ
+• タグ
+
+【コピーされない項目】
+• 日付（現在日時が自動設定されます）
+• 写真データ
+
+※選択後、必要に応じて金額や日付を変更してから保存してください
+</code></pre>
+<p><strong>2. 取引種別を選択</strong> 【必須】</p>
+<pre><code>• 支出（デフォルト）
+• 収入
+</code></pre>
+<p><strong>3. 日付を選択</strong></p>
+<pre><code>デフォルト: 今日
+カスタム:
+  • ボタンをタップするとカレンダーモーダルが表示
+  • グラフィカルなカレンダーで日付を選択
+  • 日付をタップすると自動的に閉じる
+  • 日本語カレンダー（曜日付き）で表示
+</code></pre>
+<p><strong>4. 金額を入力</strong> 【必須】</p>
+<pre><code>例: 1580
+右側の電卓アイコンをタップすると電卓で計算できます
+計算結果を「確定」すると金額欄に反映されます
+</code></pre>
+<p><strong>4.5 定価を入力</strong>【オプション】（支出のみ）</p>
+<pre><code>セール前の定価を記録できます
+電卓の「定価登録」で入力結果を定価欄に反映できます
+定価と支払額が異なる場合は一覧で割引表示されます
+</code></pre>
+<p><strong>5. 税込で計算</strong>【オプション】（新規作成時のみ）</p>
+<pre><code>トグルをONにすると:
+• 入力した金額に設定された税率（デフォルト10%）が加算されます
+• 計算後の税込価格がリアルタイムで表示されます
+• 例: 1000円 → 税込 1,100円
+
+※設定画面で税率を変更できます
+</code></pre>
+<p><strong>6. カテゴリを選択</strong> 【推奨】</p>
+<pre><code>選択肢:
+• 食費      • 外食      • 交通
+• 趣味      • 日用品    • 衣服
+• 美容      • 医療      • 教育
+• 通信      • 光熱費    • 住居
+• 保険      • その他
+</code></pre>
+<p><strong>7. タグを選択</strong> 【オプション】</p>
+<pre><code>複数のタグを選択可能
+例: プライベート、仕事、家族
+</code></pre>
+<p><strong>8. 支払方法を選択</strong></p>
+<pre><code>デフォルト選択肢:
+• 現金      • クレジットカード
+• 電子マネー  • 銀行振込
+• その他
+
+※設定の「支払方法管理」からカスタム支払方法を追加できます
+</code></pre>
+<p><strong>9. 店舗名を入力</strong> 【オプション】</p>
+<pre><code>例: セブン-イレブン
+</code></pre>
+<p><strong>10. メモを入力</strong> 【オプション】</p>
+<pre><code>例: 朝食購入
+</code></pre>
+<p><strong>11. 保存をタップ</strong></p>
+<h3 id="2-ai-json">方法2: AI JSONで追加<a class="headerlink" href="#2-ai-json" title="Permanent link">&para;</a></h3>
+<p>この方法は、ChatGPTなどのAIで生成したJSONを貼り付けて、一括で支出を登録できます。</p>
+<h4 id="chatgpt">ChatGPTプロンプト例<a class="headerlink" href="#chatgpt" title="Permanent link">&para;</a></h4>
+<pre><code>以下のレシートの内容をJSON形式で出力してください。
+
+【レシート内容】
+セブン-イレブン
+おにぎり ¥150
+お茶 ¥120
+合計 ¥270
+
+【出力形式】
+[
+  {
+    &quot;date&quot;: &quot;2026-01-07&quot;,
+    &quot;amount&quot;: 270,
+    &quot;category&quot;: &quot;食費&quot;,
+    &quot;merchant&quot;: &quot;セブン-イレブン&quot;,
+    &quot;paymentMethod&quot;: &quot;現金&quot;
+  }
+]
+</code></pre>
+<h4 id="json">JSON形式<a class="headerlink" href="#json" title="Permanent link">&para;</a></h4>
+<p><strong>対応フォーマット (4種類)</strong></p>
+<ol>
+<li><strong>配列形式</strong> 【推奨】</li>
+</ol>
+<pre><code class="language-json">[
+  {
+    &quot;date&quot;: &quot;2026-01-07&quot;,
+    &quot;amount&quot;: 1580,
+    &quot;category&quot;: &quot;食費&quot;,
+    &quot;merchant&quot;: &quot;セブン-イレブン&quot;
+  }
+]
+</code></pre>
+<ol>
+<li><strong>単一オブジェクト</strong></li>
+</ol>
+<pre><code class="language-json">{
+  &quot;date&quot;: &quot;2026-01-07&quot;,
+  &quot;amount&quot;: 1580,
+  &quot;category&quot;: &quot;食費&quot;
+}
+</code></pre>
+<ol>
+<li><strong>items配列</strong></li>
+</ol>
+<pre><code class="language-json">{
+  &quot;items&quot;: [
+    { &quot;date&quot;: &quot;2026-01-07&quot;, &quot;amount&quot;: 1580 }
+  ]
+}
+</code></pre>
+<ol>
+<li><strong>expenses配列</strong></li>
+</ol>
+<pre><code class="language-json">{
+  &quot;expenses&quot;: [
+    { &quot;date&quot;: &quot;2026-01-07&quot;, &quot;amount&quot;: 1580 }
+  ]
+}
+</code></pre>
+<h4 id="_3">カテゴリマッチング<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p><strong>エイリアス例</strong>:
+- "食事" → "食費"
+- "ランチ" → "外食"
+- "バス" → "交通"</p>
+<h4 id="ai-json">AI JSON利用のベストプラクティス<a class="headerlink" href="#ai-json" title="Permanent link">&para;</a></h4>
+<h5 id="_4">登録モードの使い分け<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<p>AI JSON画面では「支払い単位」と「明細分割」を選べます。
+明細分割モードでは<code>items</code>配列の明細を編集して保存でき、明細ごとに支出が作成されます。
+合計と明細合計が一致しない場合は、明細を手動で修正してください。
+明細入力には定価（任意）を追加でき、割引がある場合は一覧で定価と実支払額が表示されます。</p>
+<h5 id="_5">プロンプトテンプレートの活用<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
+<p>アプリ内の「プロンプトテンプレートをコピー」ボタンを使用すると、最適化されたプロンプトがクリップボードにコピーされます。このテンプレートは以下の特徴があります：</p>
+<ul>
+<li><strong>null値の許容</strong>: 日付や金額が不明な場合、nullにして後で手動入力可能</li>
+<li><strong>複数明細対応</strong>: レシート内の個別商品も<code>items</code>配列で記録</li>
+<li><strong>複数取引の扱い</strong>: 紙の家計簿など複数の取引が含まれる場合、最初の1件のみ抽出</li>
+</ul>
+<h5 id="_6">日付・金額が不明な場合の対処<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h5>
+<p><strong>例</strong>: 古いレシートで日付が読み取れない場合</p>
+<pre><code class="language-json">{
+  &quot;occurred_at&quot;: null,
+  &quot;total&quot;: 1234,
+  &quot;merchant&quot;: &quot;セブン-イレブン&quot;
+}
+</code></pre>
+<p>→ アプリで警告が表示され、DatePickerで日付を入力できます</p>
+<h5 id="_7">複数明細の活用<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<p>レシートの個別商品を記録することで、後で何を購入したか確認できます：</p>
+<pre><code class="language-json">{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;type&quot;: &quot;expense&quot;,
+  &quot;expense&quot;: {
+    &quot;occurred_at&quot;: &quot;2026-01-09&quot;,
+    &quot;total&quot;: 1234,
+    &quot;items&quot;: [
+      {&quot;name&quot;: &quot;牛乳&quot;, &quot;amount&quot;: 238},
+      {&quot;name&quot;: &quot;食パン&quot;, &quot;amount&quot;: 320},
+      {&quot;name&quot;: &quot;卵&quot;, &quot;amount&quot;: 298}
+    ]
+  }
+}
+</code></pre>
+<p><strong>注意</strong>: 明細の<code>amount</code>がnullの場合、その明細は保存されません（警告が表示されます）</p>
+<h5 id="_8">紙の家計簿や複数日の記録の扱い<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
+<p>1枚の画像に複数日・複数店舗の記録がある場合：
+- AIには「最初の1件のみ抽出」を指示
+- <code>extra.notes</code>に「複数の取引が検出されました」と記載してもらう
+- 2件目以降は別途JSONを生成してもらう</p>
+<h5 id="_9">エラー時の対処<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<p><strong>症状</strong>: JSONをペーストしても「必須項目が不足」エラー</p>
+<p><strong>対処法</strong>:
+1. 日付フィールドを確認→null の場合は手動入力
+2. 金額フィールドを確認→null の場合は手動入力
+3. カテゴリを選択（必須）</p>
+<h3 id="3-ios">方法3: レシートで追加 (iOS専用)<a class="headerlink" href="#3-ios" title="Permanent link">&para;</a></h3>
+<p>レシートをカメラでスキャンして自動的に支出を登録します。</p>
+<h4 id="_10">手順詳細<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p><strong>1. レシートで追加を選択</strong></p>
+<pre><code>ホーム画面右上の「+」ボタン → 「レシートで追加」を選択
+</code></pre>
+<p><strong>2. カメラで撮影</strong></p>
+<pre><code>• レシートを平らに置く
+• レシート全体が画面に収まるように調整
+• シャッターボタンをタップ
+• 複数ページも撮影可能
+</code></pre>
+<p><strong>3. OCR処理 (自動)</strong></p>
+<pre><code>• 文字認識（日本語・英語対応）
+• データ抽出
+  - 金額（合計を自動検出）
+  - 店舗名（最初の数行から推定）
+  - 日付（複数フォーマット対応）
+</code></pre>
+<p><strong>4. 結果確認</strong></p>
+<pre><code>抽出されたデータ:
+✓ 金額: ¥1,580
+✓ 店舗名: セブン-イレブン
+✓ 日付: 2026年1月7日
+</code></pre>
+<p><strong>5. 登録モードを選択</strong> 【任意】</p>
+<pre><code>• 支払い単位: 合計金額を1件の支出として登録
+• 明細分割: 明細ごとに複数の支出として登録
+</code></pre>
+<p><strong>6. カテゴリと支払方法を選択</strong></p>
+<p><strong>7. 保存</strong></p>
+<h4 id="ai">AIによる読み取り精度の向上<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h4>
+<p>「AI機能を使う」がONの場合、OCRで読み取ったテキストをAIがさらに解析し、金額・日付・店舗名・カテゴリ・支払方法を自動で補完します。使用するエンジンによって解析方法が異なります。</p>
+<ul>
+<li><strong>Apple Intelligence</strong>: OCRで読み取った<strong>テキスト</strong>をAIが解析します。</li>
+<li><strong>ローカルAIモデル</strong>: OCRテキストに加えて、<strong>レシートの画像そのものをAIが直接読み取ります</strong>（マルチモーダル解析）。文字認識だけでは崩れやすい複雑なレシートや、細かい明細の読み取り精度が向上します。</li>
+</ul>
+<p>エンジンの切り替えや導入方法は「設定機能の使い方 → ローカルAIモデル」を参照してください。</p>
+<h4 id="_11">対応レシート<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>レシートタイプ</th>
+<th>対応</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンビニ</td>
+<td>✅</td>
+<td>高精度</td>
+</tr>
+<tr>
+<td>スーパー</td>
+<td>✅</td>
+<td>高精度</td>
+</tr>
+<tr>
+<td>レストラン</td>
+<td>✅</td>
+<td>中精度</td>
+</tr>
+<tr>
+<td>手書き</td>
+<td>⚠️</td>
+<td>低精度（ローカルAIモデルでは改善する場合あり）</td>
+</tr>
+<tr>
+<td>感熱紙（古い）</td>
+<td>⚠️</td>
+<td>薄い文字は認識困難</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_12">撮影のコツ<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>きれいに認識させるためのポイントです。</p>
+<p><strong>良い例 ✅</strong></p>
+<ul>
+<li>明るい場所で撮影する</li>
+<li>レシートを平らに置く</li>
+<li>レシート全体を画面に収める</li>
+<li>ピントを合わせる</li>
+</ul>
+<p><strong>避けたい例 ❌</strong></p>
+<ul>
+<li>暗い場所での撮影</li>
+<li>折れ曲がったレシート</li>
+<li>一部が欠けている</li>
+<li>ピントがボケている</li>
+</ul>
+<h4 id="_13">レシートスキャン利用のベストプラクティス<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<h5 id="_14">日付・金額が読み取れない場合の対処<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h5>
+<p>OCRで日付や金額が読み取れなかった場合でも、スキャンを続行できます：</p>
+<p><strong>例</strong>: ぼやけたレシートで金額だけ読み取れない
+1. スキャン実行
+2. 警告「金額を読み取れませんでした。下記で金額を入力してください。」が表示
+3. 金額欄に手動入力
+4. カテゴリ選択
+5. 保存</p>
+<h5 id="lineitem">明細（LineItem）の自動抽出<a class="headerlink" href="#lineitem" title="Permanent link">&para;</a></h5>
+<p>明細分割モードでは、OCRまたはAI（Apple Intelligence / ローカルAIモデル）の結果から明細を抽出します。
+抽出後は手動で明細を追加・削除・編集できます：</p>
+<p><strong>抽出される明細の例</strong>:</p>
+<pre><code>レシート:
+牛乳 1L        ¥238
+食パン 6枚     ¥320
+卵 10個        ¥298
+―――――――――――――――
+合計           ¥856
+</code></pre>
+<p><strong>アプリでの表示</strong>:</p>
+<pre><code>明細 (3件) ▼
+  牛乳 1L          ¥238
+  食パン 6枚       ¥320
+  卵 10個          ¥298
+</code></pre>
+<p><strong>注意点</strong>:
+- 金額が読み取れない明細は自動的にスキップされます（警告が表示されます）
+- 明細合計と請求金額が一致しない場合は、明細を手動で調整できます
+- 明細が不足している場合はApple Intelligenceの簡易リトライを試せます（1回のみ）
+- OCRの生テキストは<code>ocrRawText</code>として保存され、後で確認できます
+- 明細の定価（任意）を入力すると、一覧で割引表示されます</p>
+<h5 id="_15">読み取り精度を上げるコツ<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
+<p><strong>撮影環境</strong>:
+- ✅ 自然光または十分な照明の下で撮影
+- ✅ 影が入らないように注意
+- ✅ スマートフォンを水平に保つ</p>
+<p><strong>レシートの準備</strong>:
+- ✅ シワを伸ばす（可能なら重しで押さえる）
+- ✅ 汚れや水滴を拭き取る
+- ✅ 古い感熱紙は早めにスキャン（文字が薄くなる前に）</p>
+<p><strong>撮影テクニック</strong>:
+- ✅ レシート全体が画面に収まるように調整
+- ✅ ピントが合うまで待つ
+- ✅ 複雑なレシートは手ブレ防止のため台に固定</p>
+<h5 id="ocr">OCR結果の確認と修正<a class="headerlink" href="#ocr" title="Permanent link">&para;</a></h5>
+<p>スキャン後のレビュー画面で以下を確認：
+1. <strong>日付</strong>: 正しく読み取れているか（間違っている場合はDatePickerで修正）
+2. <strong>金額</strong>: 合計金額が正しいか（間違っている場合は手動入力）
+3. <strong>店舗名</strong>: 店舗名が正しいか（通常は最初の数行から推定）
+4. <strong>明細</strong>: 個別商品が正しく抽出されているか（DisclosureGroupで確認）</p>
+<p><strong>認識テキストのコピー</strong>:
+- 認識テキストは行ごとに一覧表示され、行をタップするとコピーできます
+- 「全体をコピー」で一括コピーも可能です</p>
+<p><strong>明細のカテゴリ提案</strong>:
+- 明細分割モードでは、店舗名・明細名からカテゴリ候補が提示されます
+- 「提案: カテゴリ名」横の「適用」をタップするとカテゴリを反映できます</p>
+<h5 id="apple-intelligence">Apple Intelligence 追加補正（お気に入りプロンプト）<a class="headerlink" href="#apple-intelligence" title="Permanent link">&para;</a></h5>
+<p>追加指示を送ってApple Intelligenceの結果を補正できます：
+- 追加指示欄に文章を入力し、「追加指示でプロンプト送信」をタップ
+- 「お気に入り」から登録済みプロンプトを呼び出して即適用
+- 初期状態で「再度補完し直してください」が登録済み
+- 「履歴」から直近の追加指示を再利用可能</p>
+<h5 id="_16">保存されるデータ<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
+<p>レシートスキャンで保存されるデータ：
+- ✅ <strong>基本情報</strong>: 日付、金額、店舗名、カテゴリ、支払方法
+- ✅ <strong>明細</strong>: 個別商品の名前と金額（LineItemとして）
+- ✅ <strong>OCR生テキスト</strong>: 認識されたすべてのテキスト（<code>ocrRawText</code>）
+- ✅ <strong>ソース情報</strong>: <code>receiptOCR</code>として記録</p>
+<p>これにより、後で「何を買ったか」を詳細に確認できます。</p>
+<h5 id="_17">よくある問題と対処法<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h5>
+<p><strong>問題</strong>: 合計金額が正しく認識されない</p>
+<p><strong>原因</strong>: 小計と税込合計を誤認識</p>
+<p><strong>対処法</strong>:
+- レビュー画面で金額を確認
+- 間違っている場合は手動で修正
+- OCRは「合計」「小計」などのキーワードで判断しますが、100%ではありません</p>
+<p><strong>問題</strong>: 明細がうまく抽出されない</p>
+<p><strong>原因</strong>: レイアウトが複雑、文字が小さい</p>
+<p><strong>対処法</strong>:
+- 明細分割モードの場合は、明細を手動で追加・修正する
+- 重要なのは合計金額なので、明細が不正確でも手動調整で対応できます</p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

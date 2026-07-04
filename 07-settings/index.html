@@ -1,0 +1,3323 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="デジタル家計簿（BudgetBook）のユーザーマニュアル">
+      
+      
+      
+        <link rel="canonical" href="https://nicolas-bourbaki-math.github.io/budged-book/07-settings/">
+      
+      
+        <link rel="prev" href="../06-analytics/">
+      
+      
+        <link rel="next" href="../08-faq/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>設定機能の使い方 - デジタル家計簿 ユーザーマニュアル</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="デジタル家計簿 ユーザーマニュアル" class="md-header__button md-logo" aria-label="デジタル家計簿 ユーザーマニュアル" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            デジタル家計簿 ユーザーマニュアル
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              設定機能の使い方
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="デジタル家計簿 ユーザーマニュアル" class="md-nav__button md-logo" aria-label="デジタル家計簿 ユーザーマニュアル" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    デジタル家計簿 ユーザーマニュアル
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ホーム
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    はじめに
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-screen-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    画面構成
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-basic-operations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本操作
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-add-records/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支出・収入の登録方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-edit-delete/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    支出・収入の編集と削除
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    分析機能の使い方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定機能の使い方
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設定機能の使い方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定機能の使い方
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定機能の使い方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定画面の概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        税率設定
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="税率設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        税率の適用例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ホーム画面表示設定
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ホーム画面表示設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        メモを目立たせる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レシートスキャン設定（iOS専用）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="レシートスキャン設定（iOS専用）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-shutter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Shutter のデフォルト設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aiapple-intelligence-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI機能（Apple Intelligence / ローカルAIモデル）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI機能（Apple Intelligence / ローカルAIモデル）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI機能をONにする / 現在のエンジンを確認する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIプロンプトの詳細設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ローカルAIモデル
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ローカルAIモデル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モデルについて
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ダウンロード手順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エンジンの切り替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モデルの削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        検索アシスタント（検索インデックスの再生成）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="検索アシスタント（検索インデックスの再生成）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インデックスは自動で更新されます
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「検索インデックスを再生成」を使う場面
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支払方法管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="支払方法管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルト支払方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタム支払方法の作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支払方法の並び替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支払方法の削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        並び順のリセット
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリ管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="カテゴリ管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルトカテゴリ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタムカテゴリの作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アイコンの種類 🆕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタムカテゴリの削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリの並び替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリの並び順リセット
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグ管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="タグ管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支出へのタグ付け
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの並び替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの並び順リセット
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カレンダー状態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フィルタの並び順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        お気に入りプロンプト管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="お気に入りプロンプト管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトの作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトの使い方
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトの編集・削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データ管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="データ管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSVエクスポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSVインポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サンプルデータインポート 🆕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paypay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PayPay取引履歴インポート
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PayPay取引履歴インポート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-paypaycsv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: PayPayアプリでCSVをエクスポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-budgetbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: BudgetBookにインポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paypay_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PayPayインポートの特徴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paypay_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある質問（PayPay連携）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バックアップとリストア
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アプリの初期化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="アプリの初期化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化の手順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化で削除されるもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化で再作成されるデフォルトデータ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化が必要な場合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事項
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化後の復元
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    よくある質問
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    トラブルシューティング
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-operation-flows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    操作フローまとめ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    サポート情報
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-privacy-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    プライバシーポリシー
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-release-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    リリースノート
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定機能の使い方
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="設定機能の使い方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定画面の概要
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        税率設定
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="税率設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        設定方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        税率の適用例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ホーム画面表示設定
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ホーム画面表示設定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        メモを目立たせる
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        レシートスキャン設定（iOS専用）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="レシートスキャン設定（iOS専用）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-shutter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Shutter のデフォルト設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aiapple-intelligence-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI機能（Apple Intelligence / ローカルAIモデル）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI機能（Apple Intelligence / ローカルAIモデル）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI機能をONにする / 現在のエンジンを確認する
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AIプロンプトの詳細設定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ローカルAIモデル
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ローカルAIモデル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モデルについて
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ダウンロード手順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        エンジンの切り替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モデルの削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        検索アシスタント（検索インデックスの再生成）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="検索アシスタント（検索インデックスの再生成）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        インデックスは自動で更新されます
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        「検索インデックスを再生成」を使う場面
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支払方法管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="支払方法管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルト支払方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタム支払方法の作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支払方法の並び替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支払方法の削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        並び順のリセット
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリ管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="カテゴリ管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デフォルトカテゴリ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタムカテゴリの作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アイコンの種類 🆕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カスタムカテゴリの削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリの並び替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カテゴリの並び順リセット
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグ管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="タグ管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        支出へのタグ付け
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの並び替え
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        タグの並び順リセット
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        カレンダー状態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フィルタの並び順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        お気に入りプロンプト管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="お気に入りプロンプト管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトの作成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトの使い方
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        プロンプトの編集・削除
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データ管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="データ管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSVエクスポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csv_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CSVインポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サンプルデータインポート 🆕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paypay" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PayPay取引履歴インポート
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PayPay取引履歴インポート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-paypaycsv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: PayPayアプリでCSVをエクスポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-budgetbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: BudgetBookにインポート
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paypay_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PayPayインポートの特徴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paypay_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        よくある質問（PayPay連携）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        使用例
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バックアップとリストア
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        アプリの初期化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="アプリの初期化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化の手順
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化で削除されるもの
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化で再作成されるデフォルトデータ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化が必要な場合
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注意事項
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初期化後の復元
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>設定機能の使い方</h1>
+
+<h2 id="_1">設定機能の使い方<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">設定画面の概要<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>設定画面では、税率・カテゴリ・支払方法・タグの管理や、データのインポート/エクスポートなどを行えます。</p>
+<p><img alt="設定画面" src="../assets/settings.png" /></p>
+<h3 id="_3">税率設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>支出入力時の税込計算に使用する税率を設定できます。</p>
+<h4 id="_4">設定方法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p><strong>1. 設定画面を開く</strong></p>
+<pre><code>画面下部の「設定」タブをタップ
+</code></pre>
+<p><strong>2. 税率をタップ</strong></p>
+<pre><code>一般設定セクション → 「税率」をタップ
+現在の税率が表示されます（デフォルト: 10.0%）
+</code></pre>
+<p><strong>3. 新しい税率を入力</strong></p>
+<pre><code>ダイアログが表示されます
+例: 10 （10%の場合）
+     8  （8%の場合）
+</code></pre>
+<p><strong>4. 保存をタップ</strong></p>
+<pre><code>新しい税率が保存されます
+次回から支出入力時の税込計算に反映されます
+</code></pre>
+<h4 id="_5">税率の適用例<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>設定税率</th>
+<th>税抜価格</th>
+<th>税込価格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10%</td>
+<td>1,000円</td>
+<td>1,100円</td>
+</tr>
+<tr>
+<td>8%</td>
+<td>1,000円</td>
+<td>1,080円</td>
+</tr>
+<tr>
+<td>5%</td>
+<td>1,000円</td>
+<td>1,050円</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意事項</strong>:
+- 税率は0〜100%の範囲で設定できます
+- 既存の支出には影響しません（新規入力時のみ適用）
+- 軽減税率など複数の税率を使い分ける場合は、都度設定を変更してください</p>
+<h3 id="_6">ホーム画面表示設定<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="_7">メモを目立たせる<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>ホーム画面の支出一覧で、メモの表示を強調できます。</p>
+<table>
+<thead>
+<tr>
+<th>設定</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OFF（デフォルト）</strong></td>
+<td>店名が目立つ表示、メモは小さく表示</td>
+</tr>
+<tr>
+<td><strong>ON</strong></td>
+<td>メモが目立つ表示、店名は小さく表示</td>
+</tr>
+</tbody>
+</table>
+<p><strong>設定方法</strong>:
+1. 設定タブ → 「ホーム画面表示」セクション
+2. 「メモを目立たせる」トグルをオン/オフ</p>
+<h3 id="ios">レシートスキャン設定（iOS専用）<a class="headerlink" href="#ios" title="Permanent link">&para;</a></h3>
+<h4 id="auto-shutter">Auto Shutter のデフォルト設定<a class="headerlink" href="#auto-shutter" title="Permanent link">&para;</a></h4>
+<p>レシートスキャン起動時のカメラモードを選択できます。</p>
+<table>
+<thead>
+<tr>
+<th>設定</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OFF（デフォルト）</strong></td>
+<td>手動シャッターカメラで起動</td>
+</tr>
+<tr>
+<td><strong>ON</strong></td>
+<td>書類スキャナー（Auto Shutter）で起動</td>
+</tr>
+</tbody>
+</table>
+<p><strong>設定方法</strong>:
+1. 設定タブ → 「レシートスキャン」セクション
+2. 「Auto ShutterをデフォルトでON」トグルをオン/オフ</p>
+<h3 id="aiapple-intelligence-ai">AI機能（Apple Intelligence / ローカルAIモデル）<a class="headerlink" href="#aiapple-intelligence-ai" title="Permanent link">&para;</a></h3>
+<p>本アプリのAI機能（レシートの自動読み取り補完、貯金箱ナビキャラクターによる明細検索・マニュアル質問）は、次の2つのエンジンのどちらかで動きます。</p>
+<table>
+<thead>
+<tr>
+<th>エンジン</th>
+<th>特徴</th>
+<th>対応</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Apple Intelligence</strong></td>
+<td>OSに内蔵されたAI。追加ダウンロード不要で軽快。</td>
+<td>iPhone 15 Pro 以降 / M1 以降の iPad など対応端末</td>
+</tr>
+<tr>
+<td><strong>ローカルAIモデル</strong></td>
+<td>任意でダウンロードする高精度AI。レシートは画像を直接解析。</td>
+<td>別途ダウンロードが必要（約3.0GB）</td>
+</tr>
+</tbody>
+</table>
+<p>どちらのエンジンも<strong>推論はすべて端末内で行われ、データが外部に送信されることはありません</strong>。</p>
+<h4 id="aion">AI機能をONにする / 現在のエンジンを確認する<a class="headerlink" href="#aion" title="Permanent link">&para;</a></h4>
+<p><strong>1. 設定タブ →「AI機能」セクションを開く</strong></p>
+<p>このセクションは、Apple Intelligence 対応端末、またはローカルAIモデルを導入済みの端末で表示されます。</p>
+<p><strong>2. 「AI機能を使う」をON</strong></p>
+<p>ONにすると、レシートの自動補完とナビキャラクターの検索アシスタントが有効になります。</p>
+<p><strong>3. 「現在のAIエンジン」を確認</strong></p>
+<p>いま実際に使われているエンジンが表示されます。</p>
+<ul>
+<li><strong>Apple Intelligence</strong> … OS内蔵AIを使用中</li>
+<li><strong>ローカルAIモデル</strong> … ダウンロードしたAIを使用中</li>
+<li><strong>オフ</strong> … AI機能を使っていない（「AI機能を使う」がOFF、または利用可能なエンジンなし）</li>
+</ul>
+<blockquote>
+<p>どちらのエンジンを使うかは、後述の「ローカルAIモデル」画面で切り替えられます。ローカルAIモデルを導入していない場合は Apple Intelligence が使われます。</p>
+</blockquote>
+<h4 id="ai">AIプロンプトの詳細設定<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h4>
+<p>AIプロンプトで使用するカテゴリと支払方法の最大数を設定できます。</p>
+<table>
+<thead>
+<tr>
+<th>設定</th>
+<th>説明</th>
+<th>デフォルト</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>カテゴリ最大数</strong></td>
+<td>AIプロンプトに含めるカテゴリの最大数</td>
+<td>20</td>
+</tr>
+<tr>
+<td><strong>支払方法最大数</strong></td>
+<td>AIプロンプトに含める支払方法の最大数</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>設定方法</strong>:
+1. 設定タブ → 「AI機能」セクション
+2. 数値をタップして変更</p>
+<p><strong>注意</strong>: 使用頻度が高いものから順にプロンプトに含まれます。</p>
+<h3 id="ai_1">ローカルAIモデル<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
+<p>Apple Intelligence の代わりに使える、より高精度なAIモデルを任意でダウンロードできます。レシート解析では、OCRの文字認識だけに頼らず、<strong>レシートの画像そのものをAIが直接読み取る</strong>ため、複雑なレシートや細かい明細の読み取り精度が向上します。</p>
+<h4 id="_8">モデルについて<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>モデル</td>
+<td>Qwen3-VL 4B（マルチモーダルAI、日本語対応）</td>
+</tr>
+<tr>
+<td>ライセンス</td>
+<td>Apache License 2.0</td>
+</tr>
+<tr>
+<td>ダウンロードサイズ</td>
+<td>約3.0GB</td>
+</tr>
+<tr>
+<td>動作</td>
+<td>すべて端末内で完結（データは外部送信されません）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_9">ダウンロード手順<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p><strong>1. 設定タブ →「ローカルAIモデル」を開く</strong></p>
+<pre><code>「AI機能」の下にある「ローカルAIモデル」をタップ
+</code></pre>
+<p><strong>2. 「モデルをダウンロード」をタップ</strong></p>
+<pre><code>サイズ・Wi-Fi推奨の確認ダイアログが表示されます
+</code></pre>
+<p><strong>3. ダウンロード完了を待つ</strong></p>
+<pre><code>進捗バーで状況を確認できます
+完了後、自動的にダウンロードの検証（整合性チェック）が行われます
+</code></pre>
+<p>ダウンロードが完了すると、AIエンジンが自動的に「ローカルAIモデル」に切り替わります。</p>
+<blockquote>
+<p><strong>ヒント</strong>: サイズが大きいため、Wi-Fi接続でのダウンロードを強く推奨します。空き容量が不足している場合はダウンロードできません。</p>
+</blockquote>
+<h4 id="_10">エンジンの切り替え<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>ローカルAIモデルを導入済みの場合、「ローカルAIモデル」画面の<strong>「使用するAIエンジン」</strong>で、Apple Intelligence とローカルAIモデルをいつでも切り替えられます。切り替えた結果は、設定の「現在のAIエンジン」に反映されます。</p>
+<h4 id="_11">モデルの削除<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>不要になった場合は、「ローカルAIモデル」画面の<strong>「モデルを削除」</strong>でダウンロードしたファイルを削除できます。削除すると自動的に Apple Intelligence に戻ります（対応端末の場合）。</p>
+<ul>
+<li>モデルは <code>LocalLLM</code> フォルダに保存され、iCloudバックアップの対象外です。</li>
+<li>アプリのアップデートでより新しいモデルに更新された場合、古いモデルは起動時に自動的に削除され、二重に容量を使うことはありません。</li>
+</ul>
+<h3 id="_12">検索アシスタント（検索インデックスの再生成）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>貯金箱ナビキャラクターの「意味検索（自然な言葉での支出検索）」で使うベクトル検索インデックスを管理します。この項目はApple Intelligenceに対応した端末でのみ表示されます。</p>
+<h4 id="_13">インデックスは自動で更新されます<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<p>インデックスは<strong>手動で毎回再生成する必要はありません</strong>。アプリの起動時に、明細の追加・編集・削除を自動で検出してインデックスに反映します（バックグラウンドで実行）。</p>
+<ul>
+<li>新しく登録した明細 → 自動で検索対象に追加されます</li>
+<li>内容を編集した明細 → 自動で更新されます</li>
+<li>削除した明細 → 自動でインデックスから除かれます</li>
+</ul>
+<p>ただし、反映は<strong>起動時のまとめて同期</strong>で行われます。明細を登録した直後の同じ起動中は、その明細がまだ意味検索の対象に含まれていない場合があります。その場合はアプリを起動し直すと反映されます。</p>
+<h4 id="_14">「検索インデックスを再生成」を使う場面<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<p>「検索インデックスを再生成」ボタンは、既存のインデックスをすべて削除して<strong>ゼロから作り直す</strong>完全リビルドです。日常的に使う必要はなく、次のような場合のリカバリ用です。</p>
+<ul>
+<li>意味検索の結果が明らかにおかしいとき</li>
+<li>大量の明細を一括編集・インポートした直後にすぐ反映させたいとき</li>
+</ul>
+<p>明細数が多いと再生成に数十秒かかる場合があります。</p>
+<h3 id="_15">支払方法管理<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>支払方法を追加・編集・並び替えして、自分の使い方に合わせたカスタマイズができます。</p>
+<p><img alt="支払方法管理" src="../assets/payment-methods.png" /></p>
+<h4 id="_16">デフォルト支払方法<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<p>アプリには5種類のデフォルト支払方法が用意されています：</p>
+<pre><code>• 現金          • クレジットカード
+• 電子マネー    • 銀行振込
+• その他
+</code></pre>
+<p><strong>できること</strong>:
+- ✅ 名前の変更
+- ❌ 削除（できません）</p>
+<h4 id="_17">カスタム支払方法の作成<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 設定タブ → 支払方法管理
+2. 支払方法名を入力フィールドに入力
+3. 「追加」ボタンをタップ</p>
+<p><strong>例</strong>:</p>
+<pre><code>• PayPay      • 楽天カード
+• Suica       • LINE Pay
+</code></pre>
+<h4 id="_18">支払方法の並び替え<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 「編集」ボタンをタップ
+2. ドラッグ&amp;ドロップで順序を変更
+3. 「完了」ボタンをタップして保存</p>
+<h4 id="_19">支払方法の削除<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<p>カスタム支払方法のみ削除できます。</p>
+<p><strong>手順</strong>:
+1. 支払方法管理画面でカスタム支払方法を左にスワイプ
+2. 削除ボタンをタップ</p>
+<h4 id="_20">並び順のリセット<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 「デフォルトに戻す」ボタンをタップ
+2. 確認ダイアログで「リセット」を選択
+3. 初期状態の並び順に戻ります</p>
+<h3 id="_21">カテゴリ管理<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<p>カスタムカテゴリを作成・編集して、自分好みの分類ができます。</p>
+<p><img alt="カテゴリ管理" src="../assets/category-management.png" /></p>
+<h4 id="_22">デフォルトカテゴリ<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h4>
+<p>アプリには14種類のデフォルトカテゴリが用意されています：</p>
+<pre><code>• 食費      • 外食      • 交通
+• 趣味      • 日用品    • 衣服
+• 美容      • 医療      • 教育
+• 通信      • 光熱費    • 住居
+• 保険      • その他
+</code></pre>
+<p><strong>できること</strong>:
+- ✅ 名前の変更
+- ✅ アイコンの変更
+- ✅ 色の変更
+- ❌ 削除（できません）</p>
+<p><strong>手順</strong>:
+1. 設定タブ → カテゴリ管理
+2. デフォルトカテゴリから編集したいカテゴリをタップ
+3. 名前・アイコン・色を変更
+4. 保存ボタンをタップ</p>
+<h4 id="_23">カスタムカテゴリの作成<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<p>自由にカテゴリを追加できます。</p>
+<p><strong>手順</strong>:
+1. 設定タブ → カテゴリ管理
+2. 右上の「+」ボタンをタップ
+3. <strong>名前を入力</strong> (必須)
+4. <strong>アイコンを選択</strong> (85種類から選択) 🆕
+5. <strong>色を選択</strong> (カラーピッカーから自由に選択)
+6. プレビューで確認
+7. 保存ボタンをタップ</p>
+<h4 id="_24">アイコンの種類 🆕<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
+<p>8つのカテゴリに分類された85種類のアイコンから選択できます：</p>
+<p><strong>選択方法</strong>:
+1. カテゴリエディター画面で「アイコン」行をタップ
+2. カテゴリ別に整理された85種類のアイコンが表示
+3. 好きなアイコンをタップして選択
+4. 自動的に前の画面に戻る</p>
+<h4 id="_25">カスタムカテゴリの削除<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
+<p><strong>注意</strong>: 削除するカテゴリに紐づく支出がある場合は削除できません。</p>
+<p><strong>手順</strong>:
+1. カテゴリ管理画面でカスタムカテゴリを左にスワイプ
+2. 削除ボタンをタップ
+3. 確認ダイアログで「削除」を選択</p>
+<h4 id="_26">カテゴリの並び替え<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 「編集」ボタンをタップ
+2. ドラッグ&amp;ドロップで順序を変更
+3. 「完了」ボタンをタップして保存</p>
+<h4 id="_27">カテゴリの並び順リセット<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 「デフォルトに戻す」ボタンをタップ
+2. 確認ダイアログで「リセット」を選択
+3. 初期状態の並び順に戻ります</p>
+<h3 id="_28">タグ管理<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<p>支出にタグを付けて、より細かく分類できます。</p>
+<p><img alt="タグ管理" src="../assets/tag-management.png" /></p>
+<h4 id="_29">タグの作成<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 設定タブ → タグ管理
+2. 「新しいタグ」フィールドにタグ名を入力
+3. 「追加」ボタンをタップ</p>
+<p><strong>例</strong>:</p>
+<pre><code>• 外食
+• コンビニ
+• 必需品
+• ぜいたく品
+• プレゼント
+• 仕事関連
+</code></pre>
+<h4 id="_30">支出へのタグ付け<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h4>
+<p>タグは支出の登録・編集時に追加できます。</p>
+<p><strong>手順</strong>:
+1. 支出登録画面で「タグ（任意）」セクションを表示
+2. 検索フィールドにタグ名を入力
+3. 既存タグをタップして選択、または新規作成
+4. 複数のタグを選択可能
+5. 選択したタグは青いバッジで表示</p>
+<h4 id="_31">タグの削除<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. タグ管理画面でタグを左にスワイプ
+2. 削除ボタンをタップ</p>
+<p><strong>注意</strong>: タグを削除しても、紐づく支出は削除されません。支出からタグの関連付けのみが解除されます。</p>
+<h4 id="_32">タグの並び替え<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 「編集」ボタンをタップ
+2. ドラッグ&amp;ドロップで順序を変更
+3. 「完了」ボタンをタップして保存</p>
+<h4 id="_33">タグの並び順リセット<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 「デフォルトに戻す」ボタンをタップ
+2. 確認ダイアログで「リセット」を選択
+3. 初期状態の並び順に戻ります</p>
+<h3 id="_34">カレンダー状態<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<p>カレンダーに表示する「状態」を追加・削除できます。状態は日付ごとに設定でき、凡例にも表示されます。</p>
+<p><strong>追加手順</strong>:
+1. 設定タブ → カレンダー状態
+2. 状態名を入力
+3. 色を選択
+4. 「追加」をタップ</p>
+<p><strong>削除手順</strong>:
+1. 状態一覧で左にスワイプ
+2. 削除ボタンをタップ</p>
+<p><strong>注意</strong>: 状態を削除すると、その状態が設定されていた日付からも解除されます。</p>
+<h3 id="_35">フィルタの並び順<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<p>ホーム/分析のフィルタタブ順を変更できます。</p>
+<p><strong>手順</strong>:
+1. 設定タブ → フィルタの並び順
+2. 編集モードでドラッグして順序変更
+3. 「リセット」で既定順に戻す</p>
+<h3 id="_36">お気に入りプロンプト管理<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<p>レシートスキャン時にApple Intelligenceへ送信する追加指示を保存・管理できます。</p>
+<h4 id="_37">プロンプトの作成<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h4>
+<p><strong>手順</strong>:
+1. 設定タブ → お気に入りプロンプト
+2. 右上の「+」ボタンをタップ
+3. 名前を入力（例: 「明細分離」）
+4. プロンプト文を入力（例: 「明細を分離してください」）
+5. 「保存」ボタンをタップ</p>
+<h4 id="_38">プロンプトの使い方<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h4>
+<p>レシートスキャン後のレビュー画面で使用します：
+1. 追加指示欄の「お気に入り」ボタンをタップ
+2. 保存済みプロンプトを選択
+3. 選択したプロンプトがApple Intelligenceに送信されます</p>
+<h4 id="_39">プロンプトの編集・削除<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>編集</strong>: プロンプト右側のペンアイコンをタップ → 名前やプロンプト文を変更 → 保存</li>
+<li><strong>削除</strong>: プロンプトを左にスワイプ → 削除</li>
+</ul>
+<h3 id="_40">データ管理<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<p>CSVファイルで支出データのエクスポート・インポートができます。</p>
+<p><img alt="データ管理" src="../assets/data-management.png" /></p>
+<h4 id="csv">CSVエクスポート<a class="headerlink" href="#csv" title="Permanent link">&para;</a></h4>
+<p>全ての支出データをCSV形式でエクスポートします。</p>
+<p><strong>手順</strong>:
+1. 設定タブ → データ管理
+2. 「CSVエクスポート」をタップ
+3. 共有シートが表示される
+4. 保存先を選択:
+   - ファイルアプリに保存
+   - メールで送信
+   - クラウドストレージに保存</p>
+<p><strong>ファイル名形式</strong>:</p>
+<pre><code>budget_book_export_20260108_143052.csv
+</code></pre>
+<p><strong>CSV形式</strong>:</p>
+<pre><code class="language-csv">日付,金額,カテゴリ,店名,支払方法,メモ,タグ,ソース
+2026-01-08,1500,食費,セブンイレブン,現金,朝食購入,&quot;外食,コンビニ&quot;,manual
+2026-01-07,5000,交通,ガソリンスタンド,クレジットカード,満タン給油,&quot;必需品&quot;,receipt
+</code></pre>
+<p><strong>フィールド説明</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>フィールド</th>
+<th>説明</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日付</td>
+<td>yyyy-MM-dd形式</td>
+<td>2026-01-08</td>
+</tr>
+<tr>
+<td>金額</td>
+<td>数値（円）</td>
+<td>1500</td>
+</tr>
+<tr>
+<td>カテゴリ</td>
+<td>カテゴリ名</td>
+<td>食費</td>
+</tr>
+<tr>
+<td>店名</td>
+<td>店舗名</td>
+<td>セブンイレブン</td>
+</tr>
+<tr>
+<td>支払方法</td>
+<td>支払方法名</td>
+<td>現金</td>
+</tr>
+<tr>
+<td>メモ</td>
+<td>メモ内容</td>
+<td>朝食購入</td>
+</tr>
+<tr>
+<td>タグ</td>
+<td>カンマ区切りのタグリスト</td>
+<td>外食,コンビニ</td>
+</tr>
+<tr>
+<td>ソース</td>
+<td>入力元</td>
+<td>manual, aiJson, receipt</td>
+</tr>
+</tbody>
+</table>
+<h4 id="csv_1">CSVインポート<a class="headerlink" href="#csv_1" title="Permanent link">&para;</a></h4>
+<p>CSV形式のファイルから支出データをインポートします。</p>
+<p><strong>手順</strong>:
+1. 設定タブ → データ管理
+2. 「CSVインポート」をタップ
+3. ファイルピッカーでCSVファイルを選択
+4. 自動的に解析・インポート
+5. 結果が表示される</p>
+<p><strong>対応ファイル形式</strong>:
+- <code>.csv</code> (推奨)
+- <code>.txt</code> (カンマ区切り)</p>
+<p><strong>必須フィールド</strong>:
+- ✅ 日付 (yyyy-MM-dd形式)
+- ✅ 金額 (正の数値)</p>
+<p><strong>オプションフィールド</strong>:
+- カテゴリ
+- 店名
+- 支払方法
+- メモ
+- タグ
+- ソース</p>
+<p><strong>自動作成機能</strong>:</p>
+<p>CSVファイルに未知のカテゴリやタグが含まれている場合、自動的に作成されます：</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>動作</th>
+<th>設定値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>未知のカテゴリ</strong></td>
+<td>カスタムカテゴリとして自動作成</td>
+<td>アイコン: tag<br/>色: グレー</td>
+</tr>
+<tr>
+<td><strong>未知のタグ</strong></td>
+<td>タグとして自動作成</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p><strong>インポート結果の確認</strong>:</p>
+<p>インポート後、以下の情報が表示されます：
+- 成功件数
+- エラー件数
+- エラー詳細リンク（エラーがある場合）</p>
+<p>エラー詳細画面では以下が表示されます：
+- エラーが発生した行番号
+- エラーメッセージ
+- 問題のある行の内容</p>
+<p><strong>よくあるエラー</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>エラー</th>
+<th>原因</th>
+<th>解決方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日付形式が不正</td>
+<td>yyyy-MM-dd以外の形式</td>
+<td>日付を2026-01-08形式に修正</td>
+</tr>
+<tr>
+<td>金額が不正</td>
+<td>数値以外または負の値</td>
+<td>正の数値に修正</td>
+</tr>
+<tr>
+<td>ファイルが空</td>
+<td>CSVファイルにデータがない</td>
+<td>データを追加</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_41">サンプルデータインポート 🆕<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h4>
+<p>アプリの動作を確認するためのテスト用サンプルデータ（290件）を一括でインポートできます。</p>
+<p><strong>手順</strong>:
+1. 設定タブ → データ管理
+2. 「サンプルデータをインポート」をタップ
+3. 確認ダイアログが表示される
+   - 「アプリの動作確認用のサンプルデータをインポートします。全てのデータに「サンプル」タグが付与されます。」
+4. 「インポート」をタップ
+5. 自動的にインポート開始
+6. 結果が表示される</p>
+<p><strong>特徴</strong>:
+- ✅ 290件の多様な支出データ
+- ✅ 2024年1月～2026年1月のデータ
+- ✅ 全データに「サンプル」タグが自動付与
+- ✅ テスト用であることが明示される
+- ✅ 既存のデータには影響なし</p>
+<p><strong>含まれるデータ</strong>:
+- 食費、日用品、交通、趣味など多様なカテゴリ
+- 現金、クレジットカード、電子マネーなど多様な支払方法
+- 定期、臨時、旅行、仕事などのタグ
+- 実際の家計簿に近いリアルなデータ</p>
+<p><strong>サンプルデータの削除方法</strong>:</p>
+<p>「サンプル」タグでフィルタして一括削除:
+1. ホームタブで左上のメニュー（…）→「フィルタ」をタップ
+2. タグフィルタで「サンプル」を選択 → 「適用」
+3. 左上のメニュー（…）→「複数選択」をタップ
+4. 「全選択」をタップ
+5. 「削除」ボタンをタップ → 確認して削除</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>データ件数</strong></td>
+<td>290件</td>
+</tr>
+<tr>
+<td><strong>期間</strong></td>
+<td>2024年1月～2026年1月</td>
+</tr>
+<tr>
+<td><strong>自動タグ</strong></td>
+<td>すべてに「サンプル」タグが付与</td>
+</tr>
+<tr>
+<td><strong>用途</strong></td>
+<td>アプリの動作確認・機能テスト</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>💡 ヒント</strong>: サンプルデータは分析機能やフィルタ機能のテストに最適です。不要になったら「サンプル」タグでフィルタして一括削除できます。</p>
+</blockquote>
+<h4 id="paypay">PayPay取引履歴インポート<a class="headerlink" href="#paypay" title="Permanent link">&para;</a></h4>
+<p>PayPayアプリからエクスポートしたCSVファイルを直接インポートできます。重複する取引は自動的にスキップされるので、安心して何度でもインポートできます。</p>
+<h5 id="step-1-paypaycsv">Step 1: PayPayアプリでCSVをエクスポート<a class="headerlink" href="#step-1-paypaycsv" title="Permanent link">&para;</a></h5>
+<p><strong>1-1. ダウンロード申請（CSV作成依頼）</strong></p>
+<ol>
+<li>PayPayアプリを開く</li>
+<li>ホーム画面上部の <strong>「取引履歴」</strong> をタップ</li>
+<li>取引履歴画面右上の <strong>「取引履歴のダウンロード」</strong> をタップ</li>
+<li>ダウンロードしたい期間を選択</li>
+<li>直近1週間</li>
+<li>直近1ヶ月</li>
+<li>直近3ヶ月</li>
+<li>直近6ヶ月</li>
+<li><strong>「その他の期間」</strong> で任意期間を指定（最大365日）</li>
+<li><strong>「ダウンロード申請をする」</strong> をタップ</li>
+<li><strong>「申請ステータス」</strong> タブで作成状況を確認</li>
+</ol>
+<p><strong>注意事項</strong>:
+- ダウンロード有効期限は <strong>24時間</strong> です
+- 指定できる期間は <strong>最大365日</strong>（過去2年以内）
+- 「処理中」「失敗」「期限切れ」「取消」の取引はCSVに含まれません</p>
+<p><strong>1-2. ファイルのダウンロード（CSV取得）</strong></p>
+<ol>
+<li>PayPayアプリ右上の <strong>ベル（通知）</strong> を開く</li>
+<li><strong>「システム」</strong> をタップ</li>
+<li>「取引履歴をダウンロードできます」通知の <strong>「詳細を見る」</strong> をタップ</li>
+<li><strong>「申請ステータス」</strong> で対象ファイルが <strong>「ダウンロード可能」</strong> になっていることを確認</li>
+<li><strong>「ダウンロード」</strong> をタップしてCSVを保存</li>
+</ol>
+<p><strong>ヒント</strong>:
+- CSVファイルは「ファイル」アプリの「ダウンロード」フォルダに保存されます
+- ファイル名は <code>paypay_history_YYYYMMDD.csv</code> のような形式です
+- 期限切れになった場合は、再度申請してください</p>
+<h5 id="step-2-budgetbook">Step 2: BudgetBookにインポート<a class="headerlink" href="#step-2-budgetbook" title="Permanent link">&para;</a></h5>
+<p><strong>2-1. インポート画面を開く</strong></p>
+<ol>
+<li>BudgetBookアプリを開く</li>
+<li>画面下部の <strong>「ホーム」</strong> タブを表示</li>
+<li>右上の <strong>「+」</strong> ボタンをタップ</li>
+<li><strong>「外部アプリ連携」</strong> をタップ</li>
+<li><strong>「PayPay取引履歴インポート」</strong> をタップ</li>
+</ol>
+<p><strong>2-2. CSVファイルを選択</strong></p>
+<ol>
+<li>ファイルピッカーが表示される</li>
+<li>「ダウンロード」フォルダまたは保存先を開く</li>
+<li>PayPayからダウンロードしたCSVファイルをタップ</li>
+</ol>
+<p><strong>2-3. プレビューで確認</strong></p>
+<p>インポート前に内容を確認できます：</p>
+<pre><code>┌─────────────────────────────────┐
+│ インポートプレビュー              │
+├─────────────────────────────────┤
+│ 📊 合計: 150件                   │
+│ ✅ 新規: 145件                   │
+│ ⏭️  重複: 5件（スキップ）         │
+├─────────────────────────────────┤
+│ 取引一覧                         │
+│ ├ 2024/06/03 11:28             │
+│ │ ¥1,500 セブン-イレブン         │
+│ ├ 2024/06/05 14:32             │
+│ │ ¥3,200 スターバックス         │
+│ └ 2024/06/07 09:15 (重複)      │
+│   ¥850 ローソン                 │
+├─────────────────────────────────┤
+│ [キャンセル]    [インポート実行]  │
+└─────────────────────────────────┘
+</code></pre>
+<p><strong>プレビュー画面の見方</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>合計</strong></td>
+<td>PayPay CSVファイルに含まれる取引の総数</td>
+</tr>
+<tr>
+<td><strong>新規</strong></td>
+<td>新しくインポートされる取引の数</td>
+</tr>
+<tr>
+<td><strong>重複</strong></td>
+<td>既にBudgetBookに存在する取引の数（スキップされる）</td>
+</tr>
+<tr>
+<td><strong>取引一覧</strong></td>
+<td>インポート対象の取引リスト</td>
+</tr>
+<tr>
+<td><strong>(重複)</strong></td>
+<td>オレンジ色で表示され、インポートされない</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2-4. インポートを実行</strong></p>
+<ol>
+<li>プレビューで内容を確認</li>
+<li>問題がなければ <strong>「インポート実行」</strong> ボタンをタップ</li>
+<li>インポート処理が開始される（進捗表示あり）</li>
+<li>完了すると結果が表示される</li>
+</ol>
+<p><strong>2-5. インポート完了</strong></p>
+<p>結果画面に以下の情報が表示されます：</p>
+<pre><code>インポート結果
+─────────────────
+✅ 成功    145件
+⏭️  重複     5件（スキップ）
+❌ エラー    0件
+─────────────────
+[完了]
+</code></pre>
+<p>「完了」ボタンをタップして画面を閉じると、ホーム画面にインポートされた取引が表示されます。</p>
+<h5 id="paypay_1">PayPayインポートの特徴<a class="headerlink" href="#paypay_1" title="Permanent link">&para;</a></h5>
+<p><strong>1. 重複の自動検出</strong></p>
+<p>同じ取引を2回インポートしてしまう心配はありません。以下の条件で重複を判定します：</p>
+<p><strong>マッチング条件</strong>:
+- <strong>取引日時</strong>: ±60秒以内（PayPayアプリとBudgetBookの時刻ずれを考慮）
+- <strong>金額</strong>: 完全一致
+- <strong>取引先</strong>: 正規化して比較（大文字小文字、空白を無視）</p>
+<p><strong>2. 自動データ変換</strong></p>
+<p>PayPayの取引データは自動的にBudgetBook形式に変換されます：</p>
+<table>
+<thead>
+<tr>
+<th>PayPay項目</th>
+<th>BudgetBook項目</th>
+<th>変換内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>取引日（yyyy/MM/dd HH:mm）</td>
+<td>発生日時</td>
+<td>日付形式を自動変換</td>
+</tr>
+<tr>
+<td>出金金額</td>
+<td>金額（支出）</td>
+<td>そのまま</td>
+</tr>
+<tr>
+<td>入金金額</td>
+<td>金額（収入）</td>
+<td>そのまま（オプション）</td>
+</tr>
+<tr>
+<td>取引先</td>
+<td>店舗名</td>
+<td>そのまま</td>
+</tr>
+<tr>
+<td>取引方法</td>
+<td>支払方法</td>
+<td>すべて「電子マネー」に統一</td>
+</tr>
+<tr>
+<td>取引内容</td>
+<td>取引種別</td>
+<td>「支払い」→支出、「受け取り」→収入</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. 取引のフィルタリング</strong></p>
+<p>デフォルトでは <strong>「支払い」のみ</strong> がインポートされます：</p>
+<table>
+<thead>
+<tr>
+<th>PayPay取引内容</th>
+<th>インポート対象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>支払い</td>
+<td>✅ インポート</td>
+</tr>
+<tr>
+<td>受け取り</td>
+<td>❌ スキップ（デフォルト）</td>
+</tr>
+<tr>
+<td>チャージ</td>
+<td>❌ スキップ（資金移動のため）</td>
+</tr>
+<tr>
+<td>送金</td>
+<td>❌ スキップ</td>
+</tr>
+<tr>
+<td>返金</td>
+<td>❌ スキップ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. 自動タグ付け</strong></p>
+<p>インポートされたすべての取引に <strong>「PayPay」</strong> タグが自動的に追加されます。これにより、分析画面でPayPayの支出だけをフィルタリングして確認できます。</p>
+<p><strong>5. カテゴリの初期値</strong></p>
+<p>PayPayの取引には元々カテゴリ情報がないため、インポート後にすべて <strong>「未分類」</strong> カテゴリに分類されます。必要に応じて手動で適切なカテゴリに変更してください。</p>
+<h5 id="paypay_2">よくある質問（PayPay連携）<a class="headerlink" href="#paypay_2" title="Permanent link">&para;</a></h5>
+<p><strong>Q1. PayPayの「チャージ」や「受け取り」もインポートできますか？</strong></p>
+<p><strong>A</strong>: デフォルトでは「支払い」のみインポートされます。「チャージ」は資金の移動であり支出ではないため、スキップされます。</p>
+<p><strong>Q2. 同じCSVファイルを2回インポートしたらどうなりますか？</strong></p>
+<p><strong>A</strong>: 重複検出機能により、2回目のインポート時は「重複」として自動的にスキップされるため、データが二重登録されることはありません。</p>
+<p><strong>Q3. PayPayの過去の取引をすべてインポートできますか？</strong></p>
+<p><strong>A</strong>: PayPayアプリでは過去2年間の取引履歴をダウンロードできます。ただし、1回の申請で最大365日分までなので、2年分をインポートする場合は2回に分けて申請・インポートしてください。</p>
+<p><strong>Q4. インポートした取引のカテゴリが「未分類」になっていますが？</strong></p>
+<p><strong>A</strong>: PayPayのCSVにはカテゴリ情報が含まれていないため、すべて「未分類」として登録されます。ホーム画面から各取引をタップして、適切なカテゴリに変更してください。</p>
+<p><strong>Q5. PayPayの支払方法（PayPay残高、PayPayカードなど）は記録されますか？</strong></p>
+<p><strong>A</strong>: 元のPayPay支払方法はメモ欄に記録されます（例: 「支払方法: PayPay残高」）。BudgetBook上の支払方法はすべて「電子マネー」として統一されます。</p>
+<p><strong>Q6. インポートエラーが発生した場合は？</strong></p>
+<p><strong>A</strong>: エラーが発生した場合、エラー詳細画面で以下の情報が表示されます：
+- エラーが発生した行番号
+- エラーの原因
+- 問題のあるデータ</p>
+<p>成功した取引は正常にインポートされ、エラーのあった取引のみスキップされます。</p>
+<p><strong>Q7. 他の決済アプリ（楽天Pay、LINE Payなど）にも対応していますか？</strong></p>
+<p><strong>A</strong>: 現在はPayPayのみ対応しています。将来的に他の決済アプリにも対応予定です。</p>
+<h5 id="_42">使用例<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h5>
+<p><strong>例1: 初めてのPayPayインポート</strong></p>
+<pre><code>1. PayPayアプリで過去1ヶ月の取引履歴をダウンロード
+2. BudgetBookで「PayPay取引履歴インポート」を選択
+3. プレビュー表示: 合計85件、新規85件、重複0件
+4. インポート実行 → 完了
+5. ホーム画面で85件の取引が確認できる（すべて「PayPay」タグ付き）
+6. 必要に応じて各取引のカテゴリを変更
+</code></pre>
+<p><strong>例2: 定期的なインポート</strong></p>
+<pre><code>【1週間前】
+- PayPay取引100件をインポート
+
+【今日】
+- PayPayで新たに15件の取引発生
+- PayPayアプリで過去2週間の取引履歴をダウンロード（115件）
+- BudgetBookでインポート
+- プレビュー表示: 合計115件、新規15件、重複100件
+- インポート実行 → 新しい15件のみ追加される
+→ 重複チェックにより、既存の100件はスキップされる
+</code></pre>
+<h4 id="_43">バックアップとリストア<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h4>
+<p><strong>バックアップの取り方</strong>:
+1. 定期的にCSVエクスポートを実行
+2. ファイルを安全な場所に保存（クラウドストレージ推奨）
+3. ファイル名に日付を含めて管理</p>
+<p><strong>リストアの方法</strong>:
+1. バックアップしたCSVファイルを準備
+2. CSVインポート機能を使用
+3. ファイルを選択してインポート</p>
+<p><strong>注意事項</strong>:
+- インポートは追加動作です（既存データは削除されません）
+- 重複する支出も追加されます
+- リストア前にアプリを再インストールすると、既存データが削除されます</p>
+<h3 id="_44">アプリの初期化<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h3>
+<p>アプリを完全に初期状態に戻すことができます。すべてのデータ（支出、カテゴリ、タグ、設定）が削除され、アプリをインストールした直後の状態になります。</p>
+<h4 id="_45">初期化の手順<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h4>
+<p><strong>1. 設定画面を開く</strong></p>
+<pre><code>画面下部の「設定」タブをタップ
+</code></pre>
+<p><strong>2. 危険な操作セクションを探す</strong></p>
+<pre><code>最下部にある「危険な操作」セクション
+⚠️ 赤い警告アイコンの「アプリを初期化」ボタンをタップ
+</code></pre>
+<p><strong>3. 第1段階: 警告確認</strong></p>
+<pre><code>警告ダイアログが表示されます：
+「この操作により、すべてのデータが完全に削除されます。
+この操作は取り消せません。続行しますか？」
+
+• キャンセル: 初期化を中止
+• 続行: 次の確認に進む
+</code></pre>
+<p><strong>4. 第2段階: DELETE入力確認</strong></p>
+<pre><code>確認ダイアログが表示されます：
+「本当に初期化しますか？
+この操作は取り消せません。
+続行するには「DELETE」と入力してください。」
+
+テキストフィールドに「DELETE」と正確に入力
+• キャンセル: 初期化を中止
+• 初期化: 実行（DELETEと正確に入力した場合のみ有効）
+</code></pre>
+<p><strong>5. 初期化実行</strong></p>
+<pre><code>以下の処理が自動的に行われます：
+1. 全ての支出・収入データを削除
+2. 全てのカスタムカテゴリを削除
+3. 全てのタグを削除
+4. 設定（税率など）をリセット
+5. デフォルトデータを再作成
+   • 14個のデフォルトカテゴリ
+   • 10個のデフォルトタグ
+   • 5個のデフォルト支払方法
+   • デフォルト設定（税率10%）
+</code></pre>
+<h4 id="_46">初期化で削除されるもの<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>データ種別</th>
+<th>削除対象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>支出・収入</strong></td>
+<td>✅ すべて削除</td>
+</tr>
+<tr>
+<td><strong>カテゴリ</strong></td>
+<td>✅ デフォルト・カスタム含め全削除→デフォルトを再作成</td>
+</tr>
+<tr>
+<td><strong>支払方法</strong></td>
+<td>✅ すべて削除→デフォルトを再作成</td>
+</tr>
+<tr>
+<td><strong>タグ</strong></td>
+<td>✅ すべて削除→デフォルトを再作成</td>
+</tr>
+<tr>
+<td><strong>設定</strong></td>
+<td>✅ すべてリセット→デフォルトを再作成</td>
+</tr>
+<tr>
+<td><strong>レシート写真</strong></td>
+<td>✅ 紐付けが削除（写真自体はフォトライブラリに残る）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_47">初期化で再作成されるデフォルトデータ<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h4>
+<p><strong>デフォルトカテゴリ（14個）</strong>:</p>
+<pre><code>• 食費      • 日用品    • 交通
+• 交際      • 趣味      • 医療
+• 住居      • 光熱      • 通信
+• 教育      • 衣服      • 美容
+• 収入      • その他
+</code></pre>
+<p><strong>デフォルトタグ（10個）</strong>:</p>
+<pre><code>使用者:
+• 自分      • 家族      • 共有
+
+頻度:
+• 定期      • 臨時      • 予定外
+
+精算状況:
+• 立替      • 精算済み
+
+目的:
+• 旅行      • 仕事
+</code></pre>
+<p><strong>デフォルト支払方法（5個）</strong>:</p>
+<pre><code>• 現金          • クレジットカード
+• 電子マネー    • 銀行振込
+• その他
+</code></pre>
+<p><strong>デフォルト設定</strong>:</p>
+<pre><code>税率: 10%
+</code></pre>
+<h4 id="_48">初期化が必要な場合<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h4>
+<p><strong>初期化が適切なケース</strong></p>
+<ul>
+<li>アプリを最初からやり直したい</li>
+<li>テストデータを削除したい</li>
+<li>他の人に譲渡する前</li>
+<li>データが壊れている</li>
+</ul>
+<p><strong>他の方法が適切なケース</strong></p>
+<ul>
+<li>特定の支出だけ削除したい → 個別削除を使用</li>
+<li>カテゴリを整理したい → カテゴリ管理を使用</li>
+<li>バックアップを取りたい → CSV エクスポートを使用</li>
+</ul>
+<h4 id="_49">注意事項<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h4>
+<p>⚠️ <strong>重要な警告</strong>:
+- この操作は<strong>完全に取り消せません</strong>
+- 初期化前に必ず<strong>CSVエクスポートでバックアップ</strong>を取ってください
+- レシート写真の紐付けは削除されますが、写真自体はフォトライブラリに残ります
+- 初期化後にデータを復元するには、CSVインポートを使用してください</p>
+<p>💡 <strong>ヒント</strong>:
+- 特定のデータだけ削除したい場合は、初期化ではなく個別削除を使用してください
+- カテゴリやタグの整理だけなら、それぞれの管理画面から編集できます
+- データのクリーンアップには、CSVエクスポート→不要データ削除→CSVインポートの方が安全です</p>
+<h4 id="_50">初期化後の復元<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h4>
+<p>初期化後にデータを復元する方法:</p>
+<p><strong>1. 事前にバックアップを取っている場合</strong></p>
+<pre><code>設定 → データ管理 → CSVインポート
+→ バックアップファイルを選択
+</code></pre>
+<p><strong>2. iCloudバックアップから復元（iOS）</strong></p>
+<pre><code>アプリを削除 → iCloudから復元 → アプリを再インストール
+</code></pre>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
